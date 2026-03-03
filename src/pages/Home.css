@@ -5,12 +5,19 @@
 .banner {
   height: 200px;
   border-radius: 25px;
-  background-image: url("/src/assets/Background.png"); /* mets ton image */
-  background-size: cover;
-  background-position: center;
+
+  background-image:
+    url("../assets/Background.png"),
+    /* image derrière */ url("../assets/back.png"); /* image devant */
+
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin-bottom: 40px;
 }
 
