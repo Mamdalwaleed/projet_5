@@ -1,0 +1,7 @@
+.banners {
+  background-image: url("../assets/Mask.png");
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+}

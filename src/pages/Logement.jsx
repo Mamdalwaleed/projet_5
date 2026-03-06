@@ -2,6 +2,8 @@ import { useParams, Navigate } from "react-router-dom";
 import logements from "../data/logements.json";
 import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
+import "./Logement.css";
+import Taglist from "../components/Taglist";
 
 function Logement() {
   const { id } = useParams();
@@ -19,16 +21,10 @@ function Logement() {
 
       <div className="logement-header">
         <div className="logement-info">
-          <h1>{logement.title}</h1>
+          <h1 class="titre">{logement.title}</h1>
           <p>{logement.location}</p>
 
-          <div className="tags">
-            {logement.tags.map((tag) => (
-              <span key={tag} className="tag">
-                {tag}
-              </span>
-            ))}
-          </div>
+          <Taglist tags={logement.tags} />
         </div>
 
         <div className="logement-host">
@@ -53,19 +49,16 @@ function Logement() {
         </div>
       </div>
 
-      <div className="collapse-container">
-        <Collapse title="Description" content={logement.description} />
+      <div className="logement-collapses">
+        <Collapse title="Description">{logement.description}</Collapse>
 
-        <Collapse
-          title="Équipements"
-          content={
-            <ul>
-              {logement.equipments.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          }
-        />
+        <Collapse title="Équipements">
+          <ul>
+            {logement.equipments.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </Collapse>
       </div>
     </div>
   );
