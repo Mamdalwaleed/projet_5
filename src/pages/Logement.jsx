@@ -21,7 +21,7 @@ function Logement() {
 
       <div className="logement-header">
         <div className="logement-info">
-          <h1 class="titre">{logement.title}</h1>
+          <h1 className="titre">{logement.title}</h1>
           <p>{logement.location}</p>
 
           <Taglist tags={logement.tags} />

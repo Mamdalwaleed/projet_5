@@ -4,3 +4,8 @@
   align-items: center;
   margin-bottom: 20px;
 }
+.titre {
+  color: #ff6060;
+  font-size: 36px;
+  font-weight: 500;
+}

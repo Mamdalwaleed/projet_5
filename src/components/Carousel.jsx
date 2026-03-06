@@ -1,31 +1,38 @@
 import { useState } from "react";
+import "./Carousel.css";
 
 function Carousel({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
-    setCurrentIndex(
-      currentIndex === pictures.length - 1 ? 0 : currentIndex + 1,
-    );
+    setCurrentIndex((prev) => (prev === pictures.length - 1 ? 0 : prev + 1));
   };
 
   const prevSlide = () => {
-    setCurrentIndex(
-      currentIndex === 0 ? pictures.length - 1 : currentIndex - 1,
-    );
+    setCurrentIndex((prev) => (prev === 0 ? pictures.length - 1 : prev - 1));
   };
 
   return (
     <div className="carousel">
-      <img src={pictures[currentIndex]} alt="Logement" />
+      <img
+        src={pictures[currentIndex]}
+        alt="logement"
+        className="carousel-image"
+      />
 
       {pictures.length > 1 && (
         <>
-          <button onClick={prevSlide}>❮</button>
-          <button onClick={nextSlide}>❯</button>
-          <p>
+          <button className="carousel-btn left" onClick={prevSlide}>
+            ‹
+          </button>
+
+          <button className="carousel-btn right" onClick={nextSlide}>
+            ›
+          </button>
+
+          <div className="carousel-counter">
             {currentIndex + 1}/{pictures.length}
-          </p>
+          </div>
         </>
       )}
     </div>
