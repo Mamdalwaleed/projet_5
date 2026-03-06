@@ -1,0 +1,24 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centre verticalement */
+  align-items: center; /* centre horizontalement */
+  min-height: 80vh; /* prend presque toute la hauteur */
+  text-align: center;
+}
+
+.error-code {
+  font-size: 200px;
+  font-weight: 700;
+  color: #ff6060;
+  margin: 0;
+}
+
+.error-text {
+  margin: 20px 0;
+}
+
+.error-link {
+  color: black;
+  text-decoration: underline;
+}
