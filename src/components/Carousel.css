@@ -37,3 +37,8 @@
   transform: translateX(-50%);
   color: white;
 }
+@media (max-width: 768px) {
+  .carousel img {
+    height: 255px;
+  }
+}

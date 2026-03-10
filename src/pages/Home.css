@@ -36,3 +36,16 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
+@media (max-width: 768px) {
+  .banner {
+    height: 111px;
+    border-radius: 10px;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+    text-align: left;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+}

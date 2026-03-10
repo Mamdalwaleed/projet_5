@@ -27,3 +27,11 @@
 .card-link {
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    background: none;
+    padding: 0;
+    gap: 20px;
+  }
+}

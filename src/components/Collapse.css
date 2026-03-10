@@ -34,7 +34,7 @@
   transform: rotate(180deg);
 }
 @media (max-width: 768px) {
-  .logement-collapses {
-    flex-direction: column;
+  .collapse {
+    width: 100%;
   }
 }
