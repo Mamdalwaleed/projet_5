@@ -4,6 +4,17 @@
   align-items: center;
   padding: 40px;
 }
+.header nav a {
+  text-decoration: none; /* enlève le soulignement par défaut */
+  color: black;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.header nav a.active-link {
+  text-decoration: underline; /* soulignement quand actif */
+  color: black; /* facultatif pour distinguer */
+}
 
 .logo {
   height: 50px;
