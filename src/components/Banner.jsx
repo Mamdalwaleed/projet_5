@@ -1,10 +1,14 @@
 import "./Banner.css";
 
-function Banner({ image, title }) {
+function Banner({ image1, image2, title }) {
   return (
-    <div className="banner">
-      <img src={image} alt="banner" className="banner-img" />
-      {title && <h1 className="banner-title">{title}</h1>}
+    <div
+      className="banner"
+      style={{
+        backgroundImage: `url(${image1}), url(${image2})`,
+      }}
+    >
+      {title && <h1>{title}</h1>}
     </div>
   );
 }

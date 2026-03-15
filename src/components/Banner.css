@@ -1,0 +1,21 @@
+.banner {
+  width: 100%;
+  height: 200px; /* obligatoire sinon l'image n’apparaît pas */
+  border-radius: 25px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 40px;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+}

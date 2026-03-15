@@ -1,11 +1,25 @@
-.banners {
-  background-image: url("../assets/_Section\ 1.png");
+.banner-about {
   height: 200px;
+  border-radius: 25px;
+  background-image: url("../assets/banner.png"); /* chemin correct */
   background-size: cover;
   background-position: center;
-  border-radius: 25px;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.banner-about h1 {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+}
+
 .about-collapses {
   gap: 30px;
   padding: 80px 35px;
+  display: flex;
+  flex-direction: column;
 }
