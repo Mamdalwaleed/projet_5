@@ -12,6 +12,7 @@
   gap: 40px;
 }
 @media (max-width: 768px) {
+  /* Banner plus petite */
   .banner {
     height: 111px;
     border-radius: 10px;
@@ -22,5 +23,17 @@
     text-align: left;
     left: 20px;
     transform: translateY(-50%);
+  }
+
+  /* Card container : une seule colonne, scroll vertical */
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 colonne → une carte par ligne */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%; /* prend toute la largeur de la colonne */
   }
 }
