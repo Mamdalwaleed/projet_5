@@ -1,5 +1,5 @@
 import Collapse from "../components/Collapse";
-import "./About.css";
+import "./About.scss";
 
 function About() {
   return (

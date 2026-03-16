@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import "./Card.css";
+import { Link } from "react-router-dom"; //Link est un composant de React Router qui permet de créer des liens de navigation entre les pages du site,ici il est utilisé pour créer un lien vers la page Logement en utilisant l’id du logement
+import "./Card.scss";
 
 function Card({ logement }) {
   //le composant reçoit l’objet logement envoyé par Home

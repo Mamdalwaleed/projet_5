@@ -1,5 +1,5 @@
 import { useState } from "react"; // useState est un hook de React qui permet de gérer l’état local d’un composant,ici on l’utilise pour suivre si le contenu du collapse est ouvert ou fermé
-import "./Collapse.css";
+import "./Collapse.scss";
 
 function Collapse({ title, children }) {
   //le composant Collapse reçoit deux props : title qui est le titre du collapse à afficher, et children qui représente le contenu à afficher lorsque le collapse est ouvert

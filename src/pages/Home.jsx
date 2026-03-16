@@ -1,6 +1,6 @@
 import logements from "../data/logements.json"; //Les données proviennent d’un fichier JSON local qui contient les informations des logements
 import Card from "../components/Card";
-import "./Home.css";
+import "./Home.scss";
 import Banner from "../components/Banner";
 import bannerBack from "../assets/Background.png";
 import bannerFront from "../assets/back.png";

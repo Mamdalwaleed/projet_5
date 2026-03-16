@@ -3,7 +3,7 @@ import logements from "../data/logements.json";
 import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
 import Taglist from "../components/Taglist";
-import "./Logement.css";
+import "./Logement.scss";
 
 function Logement() {
   const { id } = useParams(); // un hook de React Router qui permet d’accéder aux paramètres de l’URL,ici on récupère l’id du logement à afficher
